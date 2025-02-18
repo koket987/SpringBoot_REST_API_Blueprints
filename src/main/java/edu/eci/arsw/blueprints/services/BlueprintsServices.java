@@ -2,11 +2,12 @@ package edu.eci.arsw.blueprints.services;
 
 import edu.eci.arsw.blueprints.model.Blueprint;
 import edu.eci.arsw.blueprints.persistence.BlueprintFilter;
+import edu.eci.arsw.blueprints.persistence.BlueprintNotFoundException;
 import edu.eci.arsw.blueprints.persistence.BlueprintPersistenceException;
 import edu.eci.arsw.blueprints.persistence.BlueprintsPersistence;
-import edu.eci.arsw.blueprints.persistence.BlueprintNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -18,7 +19,6 @@ public class BlueprintsServices {
 
     @Autowired
     private BlueprintFilter redundancyFilter; // Filtro de redundancia
-
     @Autowired
     private BlueprintFilter subsamplingFilter; // Filtro de submuestreo
 
