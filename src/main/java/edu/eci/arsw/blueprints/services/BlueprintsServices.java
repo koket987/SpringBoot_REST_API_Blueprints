@@ -44,7 +44,7 @@ public class BlueprintsServices {
         } else if ("subsampling".equalsIgnoreCase(filterType)) {
             return subsamplingFilter.filter(bp);
         } else {
-            return bp; // Sin filtro
+            return bp;
         }
     }
 }
